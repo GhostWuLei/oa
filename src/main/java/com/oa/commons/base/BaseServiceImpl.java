@@ -1,14 +1,5 @@
 package com.oa.commons.base;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
-import org.springframework.beans.factory.annotation.Autowired;
-
 import com.oa.commons.model.IpInfo;
 import com.oa.commons.model.Member;
 import com.oa.commons.util.DateUtil;
@@ -16,6 +7,10 @@ import com.oa.commons.util.ServletUtil;
 import com.oa.manager.personalOffice.bean.PerMsg;
 import com.oa.manager.system.bean.SyLog;
 import com.oa.manager.system.bean.SyTableCustom;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.io.Serializable;
+import java.util.*;
 
 /**
  * @author LiuJincheng

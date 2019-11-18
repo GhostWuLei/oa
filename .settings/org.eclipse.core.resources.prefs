@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/main/resources/app.properties=UTF-8
+encoding//src/main/resources/config/db-backup-restore.properties=UTF-8
+encoding//src/main/resources/config/masconfig.properties=UTF-8
+encoding//src/main/resources/config/serialconfig.properties=UTF-8

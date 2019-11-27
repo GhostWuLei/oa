@@ -3,7 +3,6 @@
 <%-- 首页工具 按钮 --%>
 <div id="tab-mainPage_tools">
   <a href="javascript:void(0)" class="icon-mini-refresh" title="初始化顺序" onclick="resetMainPortalState()"></a>
-  
 </div>
 
 

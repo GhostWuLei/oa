@@ -3,8 +3,8 @@
 <%--
 	中间区域
 --%>
-<%--
-	菜单
+
+<%--	菜单
 	<ul class="ul-menu">
 	  <li><a href="javascript:alert('xxx');"></a></li>
 	  <li><a href="javascript:;">菜单二</a></li>		
@@ -22,9 +22,8 @@
 	  			</li>
 	  		</ul>
 	  </li>
-	  
-</ul>
- --%>
+    </ul>--%>
+
 <div  class="easyui-layout" fit="true" border="false">
 		<!-- 左侧-->
 		<div region="west" split="true"  title="${requestScope.name }" style="width:220px; padding: 1px; " >
@@ -36,10 +35,7 @@
 		</div>
 		<!-- 中间-->
 		<div  region="center" style="overflow: hidden;border-top: none" >
-		
 			<div  class="maintabs"  fit="true" border="false" >
-				
-				
 			</div>
 		</div>
 

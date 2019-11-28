@@ -2,6 +2,7 @@
 <%@ include file="/WEB-INF/jsp/commons/include.inc.jsp"%>
 
 <div id="nav" class="easyui-accordion " fit="true" >
+
 	<div title="快捷菜单" iconCls="ui-icon-computer" tools="#left_kjmenu_tools" >
 		<ul class="ul-menu" style="margin-left: 2px;margin-right: 2px;margin-top: 2px">
 			<c:forEach  var="m"  items="${requestScope.mymenus }" >

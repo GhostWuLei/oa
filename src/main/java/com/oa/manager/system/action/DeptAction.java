@@ -50,8 +50,6 @@ public class DeptAction extends BaseAction{
 	@RequiresPermissions("dept:read")
 	@RequestMapping("load")
 	public String load(ModelMap map){
-		
-		
 		return "system/organize/dept/load";
 	
 	}
@@ -62,7 +60,6 @@ public class DeptAction extends BaseAction{
 	@RequestMapping("load/all")
 	public ModelAndView alldept(){
 		return ajaxJsonEscape(service.selectAllDeptsMap());
-		
 	}
 	
 	/**
@@ -71,9 +68,7 @@ public class DeptAction extends BaseAction{
 	 */
 	@RequestMapping("addPage")
 	public String addPage(){
-		
 		return "system/organize/dept/add";
-	
 	}
 	/**
 	 * 部门查询，查找带回

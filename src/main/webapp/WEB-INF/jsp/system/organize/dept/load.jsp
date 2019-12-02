@@ -29,7 +29,9 @@
 	$(function(){
 		queryLeftDepts();
 	});
+
 	function queryLeftDepts(){
+	    //alert("XXXXXXXXXX");
 		$.ajax({
 			url:"dept/load/all.do",
 			cache: false,

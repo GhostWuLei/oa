@@ -36,7 +36,9 @@
 				<a href="javascript:void(0);">组织机构</a>
 				<ul class="ul-submenu">
 					<li>
-						<a href="javascript:alert('部门管理');">部门管理</a>
+
+						&lt;%&ndash;<a href="javascript:alert('部门管理');">部门管理</a>&ndash;%&gt;
+						<a href="dept/load.do?rel=stgl_jg_bmgl" target="navTab">部门管理</a>
 					</li>
 					<li>
 						<a href="javascript:alert('用户管理');">用户管理</a>
@@ -70,7 +72,6 @@
 			<li><a href="javascript:alert('系统设置');">系统设置</a></li>
 			<li><a href="javascript:alert('数据库管理');">数据库管理</a></li>
 			<li><a href="javascript:alert('数据权限管理');">数据权限管理</a></li>
-
 		</ul>--%>
 
 	</div>

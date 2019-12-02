@@ -259,15 +259,7 @@ var navTab={
 		return this.mainTab.tabs("getTabIndex",this._getTabById(id));
 			
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 };
 

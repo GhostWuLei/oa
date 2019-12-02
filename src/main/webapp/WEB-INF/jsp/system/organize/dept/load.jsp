@@ -3,7 +3,7 @@
 <%--
 	模块：系统管理--部门管理
 --%>
-<div class="easyui-layout" fit="true">
+<div class="easyui-layout" fit="true" title="部门管理">
    <!-- 左侧-->
 	<div region="west" title="部门列表" split="true"	style="width:250px;" >
 	
@@ -25,7 +25,7 @@
    
 </div>
 <script type="text/javascript">
-<!--
+
 	$(function(){
 		queryLeftDepts();
 	});
@@ -61,8 +61,7 @@
 			}
 		});
 	}
-	
-//-->
+
 </script>
 
 	

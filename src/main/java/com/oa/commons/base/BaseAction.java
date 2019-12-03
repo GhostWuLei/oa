@@ -184,7 +184,6 @@ public abstract class BaseAction {
 	protected ModelAndView ajaxJsonEscape(Object message) {
 		ModelAndView mav = new ModelAndView(MsgConfig.PAGE_AJAXJSON);
 		mav.addObject(MsgConfig.MSGINFO, JSON.toJSONString(message).replaceAll("<script", "&lt;script").replaceAll("</script", "&lt;/script"));
-		
 		return mav;
 	}
 	/**

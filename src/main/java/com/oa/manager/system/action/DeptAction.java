@@ -59,6 +59,7 @@ public class DeptAction extends BaseAction{
 	 */
 	@RequestMapping("load/all")
 	public ModelAndView alldept(){
+
 		return ajaxJsonEscape(service.selectAllDeptsMap());
 	}
 	

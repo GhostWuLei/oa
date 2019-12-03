@@ -31,12 +31,12 @@
 	});
 
 	function queryLeftDepts(){
-	    //alert("XXXXXXXXXX");
 		$.ajax({
 			url:"dept/load/all.do",
 			cache: false,
 			dataType:"json",
 			success:function(json){
+                console.log(json);
 				var setting = {
 						view: {
 							showIcon: false
@@ -51,10 +51,15 @@
 						}
 				};
 				var rel='<%= request.getParameter("rel") %>';
+				console.log(rel);
 				var zNodes = new Array();
+				console.log(zNodes);
 				$.each(json, function(i, d){
-					zNodes.push({id : d.id,name : d.deptName,
-						pId : d.superId,href:"dept/updatePage.do?id="+d.id+"&rel="+rel,dwzTarget:"ajax",
+					zNodes.push({id : d.id,
+						name : d.deptName,
+						pId : d.superId,
+						href:"dept/updatePage.do?id="+d.id+"&rel="+rel,
+						dwzTarget:"ajax",
 						rel:rel+"_box",open:true});
 				});
 				$.fn.zTree.init($('#<%= request.getParameter("rel") %>_leftTree'), setting, zNodes);

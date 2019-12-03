@@ -28,16 +28,16 @@
 	<!-- 左侧-->
 	<div region="west" split="true" title="${requestScope.name }" style="width:220px; padding: 1px; ">
 
-		<%--<ul class="ul-menu">
-             ${requestScope.menus }
-        </ul>--%>
 		<ul class="ul-menu">
+             ${requestScope.menus }
+        </ul>
+		<%--<ul class="ul-menu">
 			<li>
 				<a href="javascript:void(0);">组织机构</a>
 				<ul class="ul-submenu">
 					<li>
 
-						<%--<a href="javascript:alert('部门管理');">部门管理</a>--%>
+						&lt;%&ndash;<a href="javascript:alert('部门管理');">部门管理</a>&ndash;%&gt;
 						<a href="dept/load.do?rel=stgl_jg_bmgl" target="navTab" title="部门管理">部门管理</a>
 					</li>
 					<li>
@@ -72,7 +72,7 @@
 			<li><a href="javascript:alert('系统设置');">系统设置</a></li>
 			<li><a href="javascript:alert('数据库管理');">数据库管理</a></li>
 			<li><a href="javascript:alert('数据权限管理');">数据权限管理</a></li>
-		</ul>
+		</ul>--%>
 
 	</div>
 

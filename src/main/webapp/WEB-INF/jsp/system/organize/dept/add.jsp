@@ -12,7 +12,7 @@
 				
 				<c:choose>
 					<c:when test="${param.superId==null}">
-						<h4><p class="text-info">添加顶级部门</p></h2>
+						<h4><p class="text-info">添加顶级部门</p></h4>
 					</c:when>
 					<c:otherwise>
 						<h4><p class="text-info">添加部门：上级部门为：<span style="color: red">[ <my:outDeptName id="${param.superId }"/> ]</span></p></h4>

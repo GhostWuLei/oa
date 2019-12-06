@@ -93,9 +93,9 @@
 			</list>			
 		</property>
 		<!-- 注解 实体映射 -->
-		<property name="packagesToScan"> 
+		<property name="packagesToScan">
 		 	<list> 
-                   <value>com.oa.manager</value> 
+                   <value>com.oa.manager</value>
             </list> 
 		</property>
 	</bean>

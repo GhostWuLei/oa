@@ -96,7 +96,6 @@ public class DeptServiceImpl extends BaseServiceImpl implements IDeptService{
 				saveLog("修改部门", "部门名称："+d.getDeptName());
 				//删除缓存
 				MyCache.getInstance().removeCache(MyCache.DEPTID2NAME,d.getId());
-				
 				return MsgConfig.MSG_KEY_SUCCESS;
 			}else{
 				return MsgConfig.MSG_KEY_FAIL;

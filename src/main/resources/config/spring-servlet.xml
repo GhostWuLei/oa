@@ -18,22 +18,17 @@
 	</context:component-scan>
 
 
-
 	 <!-- 定义跳转的文件目录 和后缀 -->  
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
         <property name="prefix" value="/WEB-INF/jsp/" />  
         <property name="suffix" value=".jsp" />
-    </bean>  
-	
-	
+    </bean>
 	
 	<!-- CommonsMultipartResolver 上传文件-->
 
 	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-			
-			<!-- 上传文件大小 -->
-			<property name="maxUploadSize" value="1024000000"></property>
-		
+		<!-- 上传文件大小 -->
+		<property name="maxUploadSize" value="1024000000"></property>
 	</bean>
 	
 	
@@ -66,9 +61,7 @@
     <!-- 自定义拦截器-->
 	<mvc:interceptors>
 		<!-- 登录拦截器 -->
-		<bean id="loginInterceptor" class="com.oa.commons.interceptor.LoginInterceptor" >
-			
-		</bean>
+		<bean id="loginInterceptor" class="com.oa.commons.interceptor.LoginInterceptor" />
 	</mvc:interceptors>
    <!-- 自定义异常处理 -->
    <bean id="myActionException" class="com.oa.commons.exception.MyActionException"/>

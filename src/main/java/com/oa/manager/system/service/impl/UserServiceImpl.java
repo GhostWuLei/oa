@@ -54,11 +54,11 @@ public class UserServiceImpl extends BaseServiceImpl implements IUserService{
 		}
 		if(StringUtils.isNotBlank(user.getDeptId())&&!"0".equals(user.getDeptId())){
 			sb.append(" and u.deptId = ? ");
-			list.add(user.getDeptId());	
+			list.add(user.getDeptId());
 		}
 		if(user.getUserSex()!=null){
 			sb.append(" and u.userSex = ? ");
-			list.add(user.getUserSex());	
+			list.add(user.getUserSex());
 		}
 		if(user.getUserStatus()!=null){
 			sb.append(" and u.userStatus = ? ");
@@ -74,7 +74,6 @@ public class UserServiceImpl extends BaseServiceImpl implements IUserService{
 		 
 		for(Map<String,Object> map:rows){
 			map.put("deptName",MyCache.getInstance().getDeptName((String)map.get("deptId")));
-		 
 		}		
 		
 		data.setRows(rows);

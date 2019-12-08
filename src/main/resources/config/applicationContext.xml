@@ -134,12 +134,7 @@
 		<aop:pointcut id="serviceMethods" expression="execution(* com.oa.manager..service.impl.*.*(..))"/> 
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="serviceMethods"/> 
 	</aop:config>
-	
-	<!--<aop:config>
-		<aop:pointcut id="serviceMethods4" expression="execution(* com.oa.android..service.impl.*.*(..))"/> 
-		<aop:advisor advice-ref="txAdvice" pointcut-ref="serviceMethods4"/> 
-	</aop:config>-->
-	
+
 	<aop:config>
 		<aop:pointcut id="serviceMethods2" expression="execution(* com.oa.commons.base.BaseServiceImpl.*(..))"/> 
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="serviceMethods2"/> 
@@ -227,8 +222,7 @@
 	<bean id="SpringJobSchedulerFactoryBean" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">  
  		 <property name="triggers">  
      		<list>
-     			 <ref bean="cronTriggerBean1"/> 
-     			 
+     			 <ref bean="cronTriggerBean1"/>
       		</list>  
  		 </property>  
 	</bean>  

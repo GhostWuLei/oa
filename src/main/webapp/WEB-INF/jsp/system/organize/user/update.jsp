@@ -80,13 +80,7 @@
 		
 	    <input type="hidden" name="datagridId" value="${param.rel }_datagrid" />	
 	    <input type="hidden" name="currentCallback" value="close" />
-		
-		  
-	
+
 </form>
 </div>	
-					
-		
-
-	
 

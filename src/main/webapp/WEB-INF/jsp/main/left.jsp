@@ -4,22 +4,22 @@
 <div id="nav" class="easyui-accordion " fit="true" >
 
 	<div title="快捷菜单" iconCls="ui-icon-computer" tools="#left_kjmenu_tools" >
-	<ul class="ul-menu" style="margin-left: 2px;margin-right: 2px;margin-top: 2px">
-		<c:forEach  var="m"  items="${requestScope.mymenus }" >
-			<li>
-				<c:choose>
-				<c:when test="${empty m.url }">
-				<a style="color: black;">
-					</c:when>
-					<c:otherwise>
-					<a  href="${m.url }" target="${m.target }" external="${m.external }" fresh="false" rel="my_${m.rel }" title="<c:out value="${m.name }"/>">
+		<ul class="ul-menu" style="margin-left: 2px;margin-right: 2px;margin-top: 2px">
+			<c:forEach  var="m"  items="${requestScope.mymenus }" >
+				<li>
+					<c:choose>
+						<c:when test="${empty m.url }">
+						<a style="color: black;">
+						</c:when>
+						<c:otherwise>
+						<a  href="${m.url }" target="${m.target }" external="${m.external }" fresh="false" rel="my_${m.rel }" title="<c:out value="${m.name }"/>">
 						</c:otherwise>
-						</c:choose>
-						&nbsp;&nbsp;<img src="${m.icon }" />&nbsp;&nbsp;<c:out value="${m.name }"/></a>
-			</li>
-		</c:forEach>
-	</ul>
-</div>
+					</c:choose>
+					&nbsp;&nbsp;<img src="${m.icon }" />&nbsp;&nbsp;<c:out value="${m.name }"/></a>
+				</li>
+			</c:forEach>
+		</ul>
+	</div>
 
 	<div  title="在线人员" iconCls="ui-icon-group" tools="#left_online_tools" id="left_online_div">
 		 <ul id="left_online_tree" class="ztree"></ul>

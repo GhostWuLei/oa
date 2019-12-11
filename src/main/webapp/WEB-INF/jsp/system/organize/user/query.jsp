@@ -45,8 +45,8 @@
 				<shiro:hasPermission name="user:update">  
 					<a class="easyui-linkbutton"  icon="icon-edit"	plain="true"
 					  title="修改用户信息"	href="user/updatePage.do?id={id}&rel=${param.rel}" target="dialog" width="800" height="400" rel="${param.rel}_update" warn="请先选择一个用户" >修改</a>
-					
 				</shiro:hasPermission>
+
 				<shiro:hasPermission name="user:delete">  
 					<a class="easyui-linkbutton"  icon="icon-remove"	plain="true"
 					   	 href="user/del.do" target="selectedTodo"  title="请谨慎操作！删除用户的同时也会删除跟用户相关的一些数据，如果想保留数据，可以设置禁止用户登录系统代替删除。确定要删除吗?" warn="至少选择一个用户">批量删除</a>
@@ -60,7 +60,6 @@
 				<shiro:hasPermission name="user:readPower"> 
 					<a  class="easyui-linkbutton"  icon="icon-search"	plain="true"	
 						title="查看权限"	 href="user/showPowersPage.do?id={id}" target="dialog" width="600" height="400" rel="${param.rel}_updaterole" warn="请先选择一个用户">查看权限</a>
-					
 				</shiro:hasPermission>
 				
 				<shiro:hasPermission name="user:resetPassword"> 
@@ -86,10 +85,10 @@
 
 
 <script type="text/javascript" >
-<!--	
+
 
 	$(function() {
-		
+		debugger;
 		$('#<%=request.getParameter("rel")%>_datagrid').datagrid({
 			border:true,
 			nowrap : false,
@@ -106,7 +105,6 @@
 					align:"center",
 					width : 120,
 					formatter: function(value,row,index){
-						
 						return '<a href="user/show.do?id='+row.id+'" target="dialog" width="800" height="400" rel="<%=request.getParameter("rel")%>_show" title="查看用户详情">'+value+'</a>';
 					}
 				},
@@ -134,7 +132,6 @@
 							}else{
 								return "女";
 							}
-							
 					}
 				},
 			 	 {
@@ -173,5 +170,5 @@
 		
 	});
 
-//-->		
+
 </script>

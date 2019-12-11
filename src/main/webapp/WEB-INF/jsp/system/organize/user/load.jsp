@@ -11,7 +11,7 @@
 	   	<ul id="${param.rel }_leftTree" class="ztree"></ul>
 		
 	</div>
-  	
+  	<%--中间--%>
 	<div  region="center" border="false">
 		<%@ include file="/WEB-INF/jsp/system/organize/user/query.jsp"%>
 	</div>

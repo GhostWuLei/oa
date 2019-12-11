@@ -6,7 +6,7 @@
 
 <div style="width: 600px;margin: 0 auto;" >
 
-	<form  action="user/add.do" beforeCallback="encryptePassword"	 onsubmit="return validateSubmitForm(this)" method="post">
+	<form  action="user/add.do" beforeCallback="encryptePassword" onsubmit="return validateSubmitForm(this)" method="post">
 		  <table class="table table-bordered ">
 			   <tr>
 					<th style="width: 70px">账号：</th>

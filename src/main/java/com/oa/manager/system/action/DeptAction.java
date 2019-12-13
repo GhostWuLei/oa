@@ -103,7 +103,6 @@ public class DeptAction extends BaseAction{
 	 */
 	@RequestMapping("lookUp")
 	public ModelAndView lookUp(PageParam param,SyDept dept){
-		
 		return ajaxJsonEscape(service.selectDepts(param, dept));
 	}
 	/**

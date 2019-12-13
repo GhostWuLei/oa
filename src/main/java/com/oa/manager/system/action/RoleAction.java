@@ -48,7 +48,6 @@ public class RoleAction extends BaseAction{
 	
 	/**
 	 * 条件查询角色
-	 * 
 	 * @return
 	 */
 	@RequiresPermissions("role:read")

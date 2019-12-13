@@ -47,15 +47,13 @@
 
 
 <script type="text/javascript" >
-<!--	
+
 
 	$(function() {
-		
 		$('#<%=request.getParameter("rel")%>_datagrid').datagrid({
 			url : "user/lookUp.do",
 			queryParams: {
 				type: '<%=request.getParameter("type")%>'
-				
 			},
 			mustParamNames:"deptId,type",
 			frozenColumns:[[
@@ -102,5 +100,5 @@
 		
 	});
 
-//-->		
+
 </script>

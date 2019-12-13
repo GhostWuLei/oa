@@ -68,7 +68,7 @@
 </div>
 
 <script type="text/javascript">
-<!--
+
 	$(function(){
 		$.ajax({
 			url:"dept/load/all.do",
@@ -100,6 +100,7 @@
 		
 			}
 		});
+
 		$('#<%=request.getParameter("rel")%>_datagrid').datagrid({
 			url : "dept/lookUp.do",
 			columns : [ [ 
@@ -162,5 +163,5 @@
 		
 	};
 
-//-->
+
 </script>

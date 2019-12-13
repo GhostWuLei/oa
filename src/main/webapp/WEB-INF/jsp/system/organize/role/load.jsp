@@ -18,7 +18,6 @@
 				<input type="text" name="roleDesc"  class="span3"/>
 				&nbsp;<i class="boot_icon-question-sign" selectLike="tooltip"></i>
 			</span>
-		
 		</div>
 	
 		<div class="search-toolbar" >
@@ -54,8 +53,6 @@
 						href="role/users/load.do?roleId={id}&rel=${param.rel}_fpjs" target="navTab"  rel="${param.rel}_fpjs" title="角色管理_分配管理" warn="请先选择一个角色">分配用户</a>
 					
 				</shiro:hasPermission>
-				
-				
 			</span>
 			
 			
@@ -73,7 +70,6 @@
 
 
 <script type="text/javascript" >
-<!--	
 	
 	$(function() {
 		
@@ -108,5 +104,4 @@
 		
 	});
 
-//-->		
 </script>

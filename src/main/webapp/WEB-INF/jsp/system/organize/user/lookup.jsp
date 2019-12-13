@@ -26,7 +26,6 @@
 				</c:when>
 				<c:when test="${param.type==3 }">
 					<%--手机号--%>
-					
 					  <%@ include file="/WEB-INF/jsp/system/organize/user/lookup_more_query_num.jsp"%>
 				</c:when>
 				
@@ -39,7 +38,6 @@
 </div>
 
 <script type="text/javascript">
-<!--
 	$(function(){
 
 		$.ajax({
@@ -74,7 +72,6 @@
 				
 			}
 		});
-		
+
 	});
-//-->
 </script>

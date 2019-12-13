@@ -88,7 +88,6 @@
 
 
 	$(function() {
-		debugger;
 		$('#<%=request.getParameter("rel")%>_datagrid').datagrid({
 			border:true,
 			nowrap : false,

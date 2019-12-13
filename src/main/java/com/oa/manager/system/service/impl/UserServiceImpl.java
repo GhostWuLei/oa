@@ -331,7 +331,6 @@ public class UserServiceImpl extends BaseServiceImpl implements IUserService{
 		 
 		for(Map<String,Object> map:rows){
 			map.put("deptName",MyCache.getInstance().getDeptName((String)map.get("deptId")));
-		 
 		}		
 		
 		data.setRows(rows);

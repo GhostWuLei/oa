@@ -18,7 +18,7 @@
 </div>
 
 <script type="text/javascript">
-<!--
+
 	$(function(){
 		
 		var setting = {
@@ -119,6 +119,7 @@
 				
 		
 	});
+
 	function updateListType(event,treeId, treeNodeJSON){
 		if(treeNodeJSON.param){
 			$('#<%= request.getParameter("rel") %>_listType').val(treeNodeJSON.param.listType);
@@ -126,7 +127,7 @@
 			refreshDatagrid(event,treeId, treeNodeJSON);
 		}
 	}
-//-->
+
 </script>
 
 

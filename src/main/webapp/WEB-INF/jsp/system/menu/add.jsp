@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" contentType="text/html;charset=utf-8"%>
 <%@ include file="/WEB-INF/jsp/commons/include.inc.jsp"%>
 <%--
 	模块：系统管理--菜单管理 -- 添加菜单
@@ -51,8 +51,8 @@
 					<a href="menu/lookUpPage.do" lookupGroup="menu" title="上级菜单查询" width="400">
 						<input value="<c:out value="${param.superName }" default=""/>" type="text" readonly="readonly" class="easyui-validatebox"  required="true" toName="menu.name" />
 					</a>
-					
 					<input type="hidden" name="menuSuperId"  toName="menu.id"  value="${param.superId }" />
+					<span class="text-info">上级菜单为系统菜单则为顶级菜单</span>
 				</td>
 			</tr>
 			<tr>

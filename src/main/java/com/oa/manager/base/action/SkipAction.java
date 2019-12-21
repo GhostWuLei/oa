@@ -24,9 +24,7 @@ import com.oa.commons.base.BaseAction;
  */
 @Controller
 public class SkipAction extends BaseAction{
-	
-	
-	
+
 	/**
 	 * 跳转到服务器信息查看页面
 	 * @return
@@ -36,22 +34,5 @@ public class SkipAction extends BaseAction{
 		
 		return "system/jspinfo";
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }

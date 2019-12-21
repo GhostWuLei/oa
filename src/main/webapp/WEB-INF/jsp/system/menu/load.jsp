@@ -40,13 +40,9 @@
 			</div>
 			<!-- 右侧 -->
 			<div  region="center" border="false">
-					
-					<%@ include file="/WEB-INF/jsp/system/menu/action/query.jsp" %>
-				
+				<%@ include file="/WEB-INF/jsp/system/menu/action/query.jsp" %>
 			</div>
 		</div>
-		
-		
 	</div>
 	</my:isDeveloper>
 
@@ -55,10 +51,11 @@
 </div>
 
 <script type="text/javascript">
-<!--
+
 	$(function(){
 		queryLeftMenus();
 	});
+
 	function queryLeftMenus(){
 		$.ajax({
 			url:"menu/query.do",
@@ -117,18 +114,16 @@
 					}
 				});
 				$.fn.zTree.init($("#menu_action_tree"), setting_action, zNodes_action);
-				
-				
-				
 			}
 		});
 	}
+
 	function updateMenusAction(event,treeId, treeNodeJSON){
 		$('#<%= request.getParameter("rel") %>_menuId').val(treeNodeJSON.id);
 		refreshDatagrid(event,treeId, treeNodeJSON);
 	}
 	
-//-->
+
 </script>
 
 

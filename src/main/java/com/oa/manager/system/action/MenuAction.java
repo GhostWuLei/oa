@@ -135,9 +135,7 @@ public class MenuAction extends BaseAction{
 		
 		return ajaxJsonEscape(service.selectMyMenus());
 	}
-	
-	
-	
+
 	/**
 	 * 菜单修改页面
 	 * @param id

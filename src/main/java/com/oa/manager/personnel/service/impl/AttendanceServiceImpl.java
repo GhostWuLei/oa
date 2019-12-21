@@ -589,6 +589,7 @@ public class AttendanceServiceImpl extends BaseServiceImpl implements
 	/**
 	 * 查询用户列表
 	 */
+	@SuppressWarnings("unchecked")
 	public DataGrid selectUsers(PageParam param,String attendanceId,SyUsers user){
 		
 		DataGrid data=new DataGrid();

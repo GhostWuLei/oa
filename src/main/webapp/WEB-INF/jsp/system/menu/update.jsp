@@ -61,6 +61,7 @@
 						<input type="text" readonly="readonly" class="easyui-validatebox"  required="true"  value="<c:out value="${requestScope.superName}"/>"  toName="menu.name" />
 					</a>
 					<input type="hidden" name="menuSuperId"  toName="menu.id"  value="${requestScope.m.menuSuperId }"/>
+					<span class="text-info">上级菜单为系统菜单则为顶级菜单</span>
 				</td>
 			</tr>
 			<tr>

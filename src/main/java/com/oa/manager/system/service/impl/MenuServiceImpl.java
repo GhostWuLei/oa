@@ -214,7 +214,7 @@ public class MenuServiceImpl extends BaseServiceImpl implements IMenuService{
 	}
 	
 	public boolean deleteActions(String[] ids){
-		
+
 		for(String id:ids){
 			dao.delete("delete SyAction where id=?", id);
 		}

@@ -39,9 +39,7 @@
 			<span style="float:right">
 				
 				<c:if test="${!empty requestScope.spId}">
-					
 					<a class="btn btn-primary btn-small" href="district/load.do?superId=${requestScope.spId }&rel=${param.rel}" target="navTab" rel="${param.rel}" >返回上级</a>
-					
 				</c:if>
 				<button class="btn btn-primary btn-small" type="submit">查询</button>&nbsp;
 				<button class="btn btn-small clear" type="button" >清空</button>&nbsp;	

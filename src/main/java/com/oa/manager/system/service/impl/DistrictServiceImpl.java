@@ -91,9 +91,8 @@ public class DistrictServiceImpl extends BaseServiceImpl implements IDistrictSer
 		}else{
 			return "msg.district.unique";//名称重复
 		}
-		
-		
 	}
+
 	public String updateDistrict(SyDistrict dis){
 		Object obj=dao.findOne("from SyDistrict where superId=? and  disName=? and id!=?",dis.getSuperId(),dis.getDisName(),dis.getId());
 		if(obj==null){
